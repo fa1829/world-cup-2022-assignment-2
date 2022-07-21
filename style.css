@@ -1,0 +1,217 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Ubuntu&display=swap');
+
+
+/* common styles */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #F3F1FF;
+
+
+}
+
+/* style for top-banner */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 100px;
+
+}
+
+.watch {
+    background-color: red;
+    transition-property: width;
+}
+
+
+.watch:hover {
+    width: 300px;
+    background-color: magenta;
+}
+
+/* styles for schedule */
+
+.schedule {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.schedule-1 {
+    width: 312px;
+    height: 312px;
+    left: 140px;
+    top: 826px;
+    background: #161616;
+    border-radius: 10px;
+    margin-right: 24px;
+
+}
+
+
+.common-button {
+
+    width: 252px;
+    height: 64px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 20px;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.transfer a {
+    border: 1px solid gray;
+}
+
+.blog {
+    background-color: red;
+
+}
+
+.final-schedule {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+
+}
+
+.match-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.duration,
+.comment {
+    color: rgba(22, 22, 22, 0.7);
+    width: 53px;
+    height: 26px;
+}
+
+.qualifier {
+    border: 1px solid gray;
+    padding-top: 50px;
+    padding-left: 50px;
+
+}
+
+.qualifier img {
+    margin-left: 30px;
+}
+
+.math-time {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+/* footer */
+
+footer {
+
+    color: white;
+    background: #161616;
+    width: 1600px;
+    height: 444px;
+    margin-top: 130px;
+
+
+
+}
+
+footer p {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-top: 50px;
+    margin-bottom: 27px;
+}
+
+footer a {
+    text-decoration: none;
+    border-right: 30px;
+    color: white;
+
+}
+
+.footer-top {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-style,
+.social {
+    margin-left: 50px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+
+}
+
+
+/* Media queries for mobile devices */
+@media only screen and (max-width:688px) {
+
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+
+
+    }
+
+    .final-schedule {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-top,
+    .footer-style,
+    .social {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* tablet devices */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 100%;
+
+    }
+
+    .final-schedule {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
